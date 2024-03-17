@@ -63,11 +63,11 @@ export class SelectAvatarComponent implements OnInit {
     const file = event.target.files[0];
     if (!file) return;
 
-    const fileSizeMB = file.size / 1024 / 1024; // Korrektur für MB-Berechnung
+    const fileSizeMB = file.size / 1500 / 1500; // Korrektur für MB-Berechnung
     const isSupportedFileType =
       file.type === 'image/jpeg' || file.type === 'image/png';
 
-    if (fileSizeMB > 1) {
+    if (fileSizeMB > 1.5) {
       this.setFormError('Ihr Bild ist zu groß. Maximale Größe beträgt 1.5MB.');
       return;
     }

@@ -44,7 +44,7 @@ export class LoginComponent {
   formSubmitted: boolean = false;
   error = false;
   errorMessage = '';
-  guestUserId: string = 'PT4yYauqYDFGDbalSPkk';
+  guestUserId: string = '5HbHapuooMJE3XJFKq12';
   showLoginCard = true;
   isGuestLogin = false;
   hidePassword = true;

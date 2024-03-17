@@ -1,14 +1,14 @@
 {
   "targets": {
-    "da-bubble-6e91a": {
+    "da-bubble-np": {
       "hosting": {
-        "da-bubble": [
-          "da-bubble-6e91a"
+        "da-bubble-np": [
+          "da-bubble-np"
         ]
       }
     }
   },
   "projects": {
-    "default": "da-bubble-6e91a"
+    "default": "da-bubble-np"
   }
 }

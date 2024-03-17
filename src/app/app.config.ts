@@ -10,6 +10,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { HashLocationStrategy, PathLocationStrategy } from '@angular/common';
+import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,14 +22,14 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(
       provideFirebaseApp(() =>
         initializeApp({
-          projectId: 'da-bubble-6e91a',
-          appId: '1:435601506485:web:dd5dd78a239840fbb7fefc',
-          storageBucket: 'da-bubble-6e91a.appspot.com',
-          apiKey: 'AIzaSyCrYeJXl3oqlWCfl7NjrLX9lDvHzhuPg5I',
-          authDomain: 'da-bubble-6e91a.firebaseapp.com',
-          messagingSenderId: '435601506485',
+          apiKey: "AIzaSyBLLQ_b_5POxf-rLN3iVYt9KW2ZW3LXiO0",
+          authDomain: "da-bubble-np.firebaseapp.com",
+          projectId: "da-bubble-np",
+          storageBucket: "da-bubble-np.appspot.com",
+          messagingSenderId: "702436554149",
+          appId: "1:702436554149:web:0027b8cdcb7a8220eca44c",
           databaseURL:
-            'https://da-bubble-6e91a-default-rtdb.europe-west1.firebasedatabase.app',
+            'https://da-bubble-np-default-rtdb.europe-west1.firebasedatabase.app',
         })
       )
     ),

@@ -29,7 +29,7 @@ export class FileService {
     const file = event.target.files[0];
     const supportedFileTypes = ['image/jpeg', 'image/png', 'application/pdf']
     if (!file) return;
-    if ((file.size / 1024 / 1024) > 1) {
+    if ((file.size / 1500 / 1500) > 1) {
       return this.openDialogInfo('Ihre Datei ist zu groß. Maximale Größe beträgt 1.5MB.');
     }
     if (!supportedFileTypes.includes(file.type)) {
